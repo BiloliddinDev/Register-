@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <div class="hero container">
+      <div class="hero__box">
+        <img
+          class="hero__img"
+          src="	https://albison-js-exam.netlify.app/images/Alone_boy_dp_-2964.jpg"
+          alt="User"
+          width="70"
+          height="70"
+        />
+        <h2 class="hero__heading" id="title">Biloliddin</h2>
+      </div>
+      <button class="hero__delete" id="create">Create Card</button>
+      <div class="hero__wrapper">
+        <button class="hero__login" id="logaut">Log out</button>
+        <button class="hero__delete" id="delete">Delete Account</button>
+      </div>
+    </div>
+    <hr />
+    <div class="hero__cards container"></div>
+    <div class="modal">
+      <form class="modal__form" action="">
+        <h2 class="modal__title">New Card</h2>
+        <label class="modal__label" for="rasm">Add Photo Url</label>
+        <input class="modal__input" type="text" name="rasm" id="Photo" />
+        <label class="modal__label" for="name">Add Name</label>
+        <input class="modal__input" type="text" name="name" id="name" />
+        <label class="modal__label" for="sorname">Add Sorname</label>
+        <input class="modal__input" type="text" name="sorname" id="sorname" />
+        <label class="modal__label" for="age">Add Age</label>
+        <input class="modal__input" type="number" name="age" id="age" />
+        <div class="modal__box">
+          <button id="modalsumbit" class="modal__btn" type="submit">
+            Submit
+          </button>
+          <button class="modal__btn" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

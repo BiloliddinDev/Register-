@@ -1,0 +1,143 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+  &__box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+
+  &__img {
+    border-radius: 50%;
+  }
+
+  &__heading {
+    font-style: 26px;
+    font-style: italic;
+    color: #a03bff;
+    border-bottom: 3px solid #a03bff;
+  }
+
+  &__login,
+  &__delete {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 12px;
+    background-color: red;
+    cursor: pointer;
+    font-size: 20px;
+    color: white;
+  }
+
+  &__delete {
+    background-color: #a03bff;
+  }
+
+  &__cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+  }
+
+  &__card {
+    width: 300px;
+    padding: 15px;
+    background-color: #a03bff89;
+    display: grid;
+    place-items: center;
+    border-radius: 12px;
+  }
+
+  &__name,
+  &__sorname {
+    margin: 8px 0;
+    font-size: 24px;
+    color: white;
+  }
+
+  &__age {
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+  }
+
+  &__btn {
+    padding: 10px 20px;
+    border: none;
+    background-color: red;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    margin-top: 5px;
+    cursor: pointer;
+  }
+}
+
+.modal {
+  width: 1000px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #a03bff;
+  border-radius: 8px;
+  display: none;
+  &__form {
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+  }
+
+  &__title {
+    font-size: 40px;
+    line-height: 45px;
+    color: white;
+    margin-bottom: 20px;
+  }
+
+  &__label {
+    font-size: 20px;
+    color: white;
+    padding: 5px 0;
+    border-bottom: 3px dotted white;
+    margin-bottom: 5px;
+  }
+
+  &__input {
+    width: 400px;
+    border-radius: 8px;
+    padding: 6px 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    color: #a03bff;
+  }
+
+  &__btn {
+    margin-top: 20px;
+    padding: 8px 20px;
+    border: none;
+    color: #a03bff;
+    font-style: italic;
+    font-size: 24px;
+    cursor: pointer;
+    border-radius: 8px;
+  }
+}
+
+.hiden {
+  display: flex;
+}
